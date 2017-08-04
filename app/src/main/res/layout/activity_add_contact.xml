@@ -10,113 +10,61 @@
         android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textViewName"
-        android:layout_alignBottom="@+id/textViewName"
-        android:layout_alignLeft="@+id/editTextMobile"
-        android:layout_alignStart="@+id/editTextMobile"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
         android:maxLines="1" />
-
-    <TextView
-        android:id="@+id/textViewMobile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mobile"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/editTextName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="33dp"
-        android:layout_marginStart="33dp" />
 
     <EditText
         android:id="@+id/editTextMobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textViewMobile"
-        android:layout_alignBottom="@+id/textViewMobile"
-        android:layout_alignLeft="@+id/editTextEmail"
-        android:layout_alignStart="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="29dp"
         android:ems="10"
+        android:hint="Mobile"
         android:inputType="phone"
         android:maxLines="1" />
 
-    <TextView
-        android:id="@+id/textViewCompany"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Company"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/editTextEmail"
-        android:layout_alignLeft="@+id/textViewEmail"
-        android:layout_alignStart="@+id/textViewEmail" />
-
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:layout_marginTop="20dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/textViewMobile"
-        android:layout_alignStart="@+id/textViewMobile" />
-
-
-    <EditText
-        android:id="@+id/editTextCompany"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_alignBaseline="@+id/textViewCompany"
-        android:layout_alignBottom="@+id/textViewCompany"
-        android:layout_alignRight="@+id/editTextEmail"
-        android:layout_alignEnd="@+id/editTextEmail"
-        android:layout_toEndOf="@+id/textViewCompany"
-        android:layout_toRightOf="@+id/textViewCompany"
-        android:layout_alignLeft="@+id/editTextEmail"
-        android:layout_alignStart="@+id/editTextEmail"
-        android:maxLines="1"/>
-
-    <TextView
-        android:id="@+id/textViewEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/editTextMobile"
-        android:layout_alignLeft="@+id/textViewMobile"
-        android:layout_alignStart="@+id/textViewMobile" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
-        android:layout_marginRight="39dp"
-        android:layout_marginEnd="39dp"
-        android:layout_alignBaseline="@+id/textViewEmail"
-        android:layout_alignBottom="@+id/textViewEmail"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:maxLines="1"/>
+        android:maxLines="1"
+        android:layout_below="@+id/editTextMobile"
+        android:layout_alignLeft="@+id/editTextMobile"
+        android:layout_alignStart="@+id/editTextMobile"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:id="@+id/editTextCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Company"
+        android:maxLines="1"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignLeft="@+id/editTextEmail"
+        android:layout_alignStart="@+id/editTextEmail" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editTextCompany"
-        android:layout_alignRight="@+id/editTextCompany"
-        android:layout_below="@+id/editTextCompany"
-        android:layout_marginTop="36dp"
         android:text="add to contact list"
-        android:layout_alignLeft="@+id/textViewCompany"
-        android:layout_alignStart="@+id/textViewCompany" />
+        android:layout_below="@+id/editTextCompany"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp" />
 
 
 

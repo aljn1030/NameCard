@@ -53,7 +53,7 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final Dialog dialog = new AlertDialog.Builder(DetailActivity.this).
-                        setMessage("Delete or not?").setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                        setMessage("Are you sure you want to delete?").setPositiveButton("YES", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         final boolean deleteContact = deleteContact();

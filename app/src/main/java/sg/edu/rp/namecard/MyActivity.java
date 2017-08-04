@@ -43,10 +43,10 @@ public class MyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    final String name = etName.getText() != null ? etName.getText().toString().trim() : "";
-                    final String mobile = etMobile.getText() != null ? etMobile.getText().toString().trim() : "";
-                    final String email = etEmail.getText() != null ? etEmail.getText().toString().trim() : "";
-                    final String company = etCompany.getText() != null ? etCompany.getText().toString().trim() : "";
+                    final String name =  etName.getText().toString();
+                    final String mobile = etMobile.getText().toString() ;
+                    final String email = etEmail.getText().toString();
+                    final String company =  etCompany.getText().toString();
 
                     final JSONObject jsonObject = new JSONObject();
                     jsonObject.put("name", name);
@@ -106,13 +106,13 @@ public class MyActivity extends AppCompatActivity {
 
 
     private void saveInfo(String result) {
-        SharedPreferences sp = getSharedPreferences("sp_file", Context.MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences("save", Context.MODE_PRIVATE);
         sp.edit().remove("contact").apply();
         sp.edit().putString("contact", result).apply();
     }
 
     private Contact getMyContact() {
-        SharedPreferences sp = getSharedPreferences("sp_file", Context.MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences("save", Context.MODE_PRIVATE);
         String contact = sp.getString("contact", null);
 
         if(TextUtils.isEmpty(contact)){
@@ -134,7 +134,7 @@ public class MyActivity extends AppCompatActivity {
     }
 
     private String getMyContactJson() {
-        SharedPreferences sp = getSharedPreferences("sp_file", Context.MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences("save", Context.MODE_PRIVATE);
         String contact = sp.getString("contact", null);
 
         if(TextUtils.isEmpty(contact)){

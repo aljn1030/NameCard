@@ -40,14 +40,14 @@
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewMobile"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textViewMobile"
-        android:layout_marginTop="40dp"
         android:text="@string/name"
         android:textAppearance="@android:style/TextAppearance.Large"
         tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="70dp" />
+        tools:layout_editor_absoluteY="70dp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/textViewMobile"
+        android:layout_alignStart="@+id/textViewMobile"
+        android:layout_marginBottom="35dp" />
 
     <TextView
         android:id="@+id/textViewEmail"
@@ -64,7 +64,8 @@
 
     <ImageView
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:id="@+id/imageView3" />
 
 
     <Button

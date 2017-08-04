@@ -52,7 +52,7 @@ public class AddContactActivity extends AppCompatActivity {
                         DBHelper dbHelper = new DBHelper(AddContactActivity.this);
                         dbHelper.insertContact(new Contact(name,mobile,email,company));
                         dbHelper.close();
-                        Toast.makeText(AddContactActivity.this, "add contact succeed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddContactActivity.this, "Contact Add Successfully", Toast.LENGTH_SHORT).show();
 
 
 
