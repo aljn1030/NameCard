@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="sg.edu.rp.namecard.MyActivity">
+
+
+    <TextView
+        android:id="@+id/textViewMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/mobile"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="130dp"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/company"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/textViewMobile"
+        android:layout_alignLeft="@+id/textViewMobile"
+        android:layout_alignStart="@+id/textViewMobile" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewMobile"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewMobile"
+        android:layout_marginTop="40dp"
+        android:text="@string/name"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="@string/email"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="257dp"
+        android:layout_below="@+id/textViewCompany"
+        android:layout_alignLeft="@+id/textViewCompany"
+        android:layout_alignStart="@+id/textViewCompany" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="delete  this  person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

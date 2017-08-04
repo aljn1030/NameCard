@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Name Card</string>
+    <string name="name">Name:  %1$s</string>
+    <string name="mobile">Mobile:  %1$s</string>
+    <string name="email">Email:  %1$s</string>
+    <string name="company">Company:  %1$s</string>
+
+</resources>
